@@ -1,0 +1,50 @@
+html {
+  background-color: #E3F4F4;
+
+}
+
+#navbar {
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: C4DFDF;
+  padding: 10px;
+  
+}
+
+#navbar header {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+
+}
+
+.nav-link {
+  display: block;
+  margin-bottom: 10px;
+  color: #333
+}
+
+#main-doc {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+  }
+  #main-doc {
+    margin-left: 0;
+
+  }
+  .nav-link {
+    display: inline-block;
+    margin-right: 10px;
+    
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <link rel="stylesheet" type="text/css" href="seaside_styles.css">
+  <meta charset="UTF-8">
+  <title>Seaside Survey</title>
+</head>
+<body>
+<div class="box">
+  <h1 id="title">Seaside Survey</h1>
+  <p id="description">Thank you visiting our Seaside Survey. We are trying to see what beach is loved most by the Jacksonville locals. We appreciate your feedback!</p>
+<form method="post" id="survey-form">
+  <fieldset>
+    <p> All required fields are marked with an asterisk * </p>
+    <label for="name" id="name-label">Enter your Name*: <input id="name" name="name" type="text" required placeholder="Full Name"></label>
+    <br><br>
+    <label for="email" id="email-label">Enter Your Email*: <input id="email" type="email" required placeholder="example@gmail.com"></label>
+    <label for="number" id="number-label">Enter your Age*: <input type="number" id="number" placeholder=" Age 18-120" required min="18" max="120"></label>
+    </fieldset>
+    <fieldset>
+    <legend>Select your favorite beach from the dropdown:</legend>
+    <select id="dropdown">
+      <option value="">(select one)</option>
+      <option value="1">Jax Beach</option>
+      <option value="2">Ponte Vedra Beach</option>
+      <option value="3">St. Augustine Beach</option>
+    </select>
+    </fieldset>
+	<fieldset>  
+    <legend>What is your favorite beach activity?</legend>
+    <label for="shells">Shell and Shark Teeth finding<input id="shells" type="radio" name="reason" checked value="reason"/></label>
+    <br><br>
+    <label for="surfing">Surfing<input id="surfing" type="radio" name="reason" value="reason"/></label>
+    <br><br>
+    <label for="tanning">Tanning<input id="tanning" type="radio" name="reason" value="reason"/></label> 
+	</fieldset>
+	<fieldset>
+    <legend>Do you drive your car onto the beach?</legend>
+    <label for="drive-yes">Yes, I do<input id="drive-yes" type="checkbox" name="drive-on" value="yes"></label>
+    <br><br>
+    <label for="drive-no">No, I do not<input id="drive-no" type="checkbox" name="drive-on" value="no"></label>   
+	</fieldset>
+    <fieldset>
+        <textarea id="comments" rows="4" cols="40"  placeholder="Add any additional comments on why you love your beach"></textarea>
+    </fieldset>  
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</div>
+<br><br>
+</body
+</html>

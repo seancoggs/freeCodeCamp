@@ -1,0 +1,138 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Basics</title>  
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML Documentation</header>
+      <br>
+        <a class="nav-link" href="#Intro_to_HTML">Intro to HTML</a>
+        <br>
+        <a class="nav-link" href="#Common_HTML_Tags">Common HTML Tags</a>
+        <br>
+        <a class="nav-link" href="#HTML_Classes">HTML Classes</a>
+        <br>
+        <a class="nav-link" href="#HTML_IDs">HTML IDs</a>
+        <br>   
+        <a class="nav-link" href="#Semantic_HTML">Semantic HTML</a>
+    </nav>
+    <br> 
+    <main id="main-doc"> 
+        <section class="main-section" id="Intro_to_HTML">
+        <header>Intro to HTML</header>
+        <p>HTML (HyperText Markup Language) is the standard language for creating webs.</p>
+      </section>
+      <section class="main-section" id="Common_HTML_Tags">
+        <header>Common HTML Tags</header>
+        <p>Here are some of the most commone HTML tags:</p>
+        <code>&lt;h1&gt; This is a heading tag &lt;/h1&gt;</code>
+        <br>
+        <code>&lt;p&gt; This is a paragraph tag &lt;/p&gt;</code>
+        <p>Other common HTML tags are as listed:</p>
+        <ul>
+          <li>&lt;p&gt</li>
+          <li>&lt;h1&gt</li>
+          <li>&lt;a&gt</li>
+          <li>&lt;img&gt</li>
+          <li>&lt;div&gt</li>
+        </ul>
+      </section>
+      <section class="main-section" id="HTML_Classes">
+        <header>HTML Classes</header>
+        <p>HTML Classes are used to style multiple elements. You can assign an element a class by entering class="example" within the elements opening tag.</p>
+        <p>&lt;p&gt class="example-paragraph"&lt;/p&gt This is an example class that could be used to identify any paragraph that has that tag within it.</p>
+      </section>        
+      <section class="main-section" id="HTML_IDs">
+        <header>HTML IDs</header>
+        <p>IDs are used to uniquely identify an element on a page. You can define an ID in your CSS and then apply it to an HTML element using the id attribute. Remember that Classes can be used for multiple elements while IDs are to identify one element.</p>
+<pre>
+<code>&lt;p&gt id="example-paragraph"&lt;/p&gt This is an example ID that could be used to identify a paragraph.</code>
+<code> <p>To identify the IDs in the HTML you would use the # in your CSS as follows:</p>
+#unique-paragraph {
+    color: blue;
+}
+</code>
+</pre>
+
+      </section>
+      <section class="main-section" id="Semantic_HTML">
+        <header>Semantic HTML</header>
+        <p>Semantic elements describe what it is being used for.</p>
+        <p>Some common semantic elements are:</p>
+        <code>
+        <ul>
+          <li>&ltarticle&gt</li>
+          <li>&ltmain&gt</li>  
+          <li>&ltfooter&gt</li>
+        </ul>
+        </code>
+       <p>These elements describe how they are going to be used on the page.</p>
+       <p>The  &ltarticle&gt element represents content on the page that could be shown independently.</p>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+html {
+  background-color: #E3F4F4;
+
+}
+
+#navbar {
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: C4DFDF;
+  padding: 10px;
+  
+}
+
+#navbar header {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+
+}
+
+.nav-link {
+  display: block;
+  margin-bottom: 10px;
+  color: #333
+}
+
+#main-doc {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+  }
+  #main-doc {
+    margin-left: 0;
+
+  }
+  .nav-link {
+    display: inline-block;
+    margin-right: 10px;
+    
+  }
+}
+
+** end of undefined **
+
